@@ -1,0 +1,274 @@
+.body {
+    font-family: 'Raleway', sans-serif;
+}
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 290px;
+    align-items: flex-start;
+}
+.logo_img {
+    width: auto;
+    height: 57px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.logo_description{
+    opacity: 35%;
+    font-size: 16px;
+    padding-left: 10px;
+}
+.accordion__header {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: lighter;
+}
+.accordion__input {
+    display: none;
+  }
+  
+  .accordion__content {
+    display: none;
+  }
+  
+  .accordion__input:checked ~ .accordion__content {
+    display: block;
+  }
+  
+  .accordion__header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .accordion__header::after {
+    content: "";
+    display: block;
+    width: 7px;
+    height: 7px;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    background-size: content;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 2px;
+    transform: rotate(-45deg);
+    transition: transform 400ms linear;
+  }
+  .accordion__input:checked + .accordion__header::after {
+    transform: rotate(135deg);
+    transition: transform 400ms linear;
+    margin-top: 5px;
+    color: #0536FC;
+  }
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    min-width: 70%;
+    margin-top: 15px;
+    margin-right: 60px;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+  .title_container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 150px;
+  }
+  .title{
+    margin-top: 127px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 210px;
+    max-width: 687px;
+    min-height: 458px;
+  }
+  .title__description {
+    font-size: 16px;
+    color: #0536FC;
+    text-transform: uppercase;
+}
+.tiile__name {
+  font-size: 57px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.title__text {
+  font-size: 16px;
+  opacity: 60%;
+}
+.arrow__item {
+  max-width: 30px;
+  max-height: 30px;
+}
+.arrow__item:hover{
+  transform: translateY(100px);
+}
+.arrow{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 458px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+.buttons__nav {
+  border: none;
+  background: transparent;
+  color: #0536FC;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: 1px solid #00000026;
+  height: 90px;
+  width: 50%; 
+  transition: background 500ms ease-in, color 500ms ease-in;
+}
+.buttons_left {
+  border-right: none;
+  float: left;
+}
+.buttons__nav:hover{
+  background: #0536FC;
+  color: #FFFFFF;
+  border: 1px solid #0536FC;
+}
+.buttons {
+  margin-bottom: 150px;
+}
+.invest {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-sizing: border-box;
+}
+.caption {
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  padding-left: 210px;
+  max-width: 687px;
+}
+.caption__description{
+  font-size: 16px;
+  color: #0536FC;
+}
+.caption__tiile {
+  font-size: 38px;
+  font-weight: bold;
+}
+.caption__text {
+  font-size: 16px;
+  font-weight: bold;
+
+}
+.invest_form {
+  display: flex;
+  flex-direction: column;
+  max-width: 753px;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  min-height: 1000px;
+
+}
+.choise__button{
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  border: 1px solid #00000026;
+  height: 50px;
+  width: 25%; 
+  float: left
+}
+.choise__button:hover {
+  background-color: #0536FC;
+  border: 1px solid #0536FC;
+  color: white;
+}
+.choise__custom {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  border: 1px solid #00000026;
+  height: 50px;
+  width: 100%;
+}
+.choise {
+  gap: 0px;
+  padding: 0px;
+}
+.amount__capture{
+  text-transform: uppercase;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+.contact__label {
+  text-transform: uppercase;
+}
+.contact__input{
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  border-bottom: 1px solid #00000026;
+  width: 75%;
+}
+.send {
+  text-transform: uppercase;
+  border: none;
+  background: #0536FC;
+  font-weight: lighter;
+  font-size: 16px;
+  color: #FFFFFF;
+  height: 50px;
+  width: 150px; 
+  margin-top: 50px;
+}
+
+.agreements {
+  display: flex;
+  flex-direction: column;
+}
+.label_nolink {
+  text-decoration: none;
+  color: #0536FC;
+  padding: 5px;
+}
+.way {
+  display: flex;
+  padding-bottom: 50px;
+  
+}
+.way__input {
+  margin-right: 15px;
+}
+.way__label {
+  margin-right: 30px;
+}
+.amount {
+  padding-bottom: 20px;
+}
+.period {
+  display: flex;
+  padding-bottom: 50px;
+}
+.period__input {
+  margin-right: 15px;
+}
+.period__label {
+  margin-right: 30px;
+}
+.contact__label {
+  padding-bottom: 20px;
+}
+.contact__input {
+  margin-bottom: 36px;
+}
+.agreements__input {
+  margin-bottom: 16px;
+  margin-right: 10px;
+}
