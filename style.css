@@ -35,7 +35,6 @@
   .accordion__input:checked ~ .accordion__content {
     display: block;
   }
-  
   .accordion__header {
     display: flex;
     justify-content: space-between;
@@ -271,4 +270,77 @@
 .agreements__input {
   margin-bottom: 16px;
   margin-right: 10px;
+}
+
+@media all and (max-width: 780px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+  .navigation{
+    padding-left: 15px;
+    flex-direction: column;
+  }
+  .title{
+    margin-top: 127px;
+    padding-left: 50px;
+  }
+  .caption {
+      padding-left: 10px;
+  }
+  .way {
+      display:flex;
+      flex-direction: column;
+  }
+  .period {
+      display: flex;
+      flex-direction: column;
+  }
+  .invest {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+}
+@media all and (max-width: 320px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+  .navigation{
+    padding-left: 15px;
+    flex-direction: column;
+  }
+  .title{
+    margin-top: 127px;
+    padding-left: 50px;
+  }
+  .caption {
+      padding-left: 10px;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+  .invest {
+      display: flex;
+      flex-direction: column;
+  }
+  .caption {
+      padding-left: 10px;
+  }
+  .way {
+      display:flex;
+      flex-direction: column;
+  }
+  .period {
+      display: flex;
+      flex-direction: column;
+  }
+ .invest {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 }
